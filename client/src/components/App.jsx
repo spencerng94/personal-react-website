@@ -1,16 +1,21 @@
 import React from 'react';
-
+import { render } from 'react-dom';
+import { Switch, Route, Link } from 'react-router';
+import Nav from './nav/Nav.jsx';
+ 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-    }
 
     render() {
         return (
-            <div></div>
+            <div className="App">
+                <Router>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Me</li>
+                        <li>Portfolio/Projects</li>
+                    </ul>
+                </Router>
+            </div>
         )
     }
 }
