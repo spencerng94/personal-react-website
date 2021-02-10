@@ -8,3 +8,177 @@
     right: 0px;
     width: 100%;
 }
+
+.first-line {
+  margin: 0px 0px 30px 4px;
+  color: #64ffda;
+  font-family: "Lucida Console", "Courier New", 'monospace';
+  font-weight: 20;
+}
+
+h1 {
+  font-size: 10;
+}
+
+.full-name, .headline {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 20;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.lets-connect {
+  font-size: clamp(30px, 8vw, 60px);
+  font-weight: 15;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  margin: auto;
+  width: 50%;
+}
+
+.lets-connect-p {
+  margin: auto;
+  width: 50%;
+}
+
+.intro {
+  margin: 20px 0px 0px;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.email-link {
+  color: #64ffda;
+  font-size: 14px;
+  font-family: "Lucida Console", "Courier New", 'monospace';
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 5px;
+  padding: 1.00rem 1.50rem;
+  /* line-height: 1; */
+  cursor: pointer;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+p {
+  color: midnightblue;
+  font-size: 18px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+body {
+  background-color: coral;
+  /* /* background-image: url("https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Website_Cover4.jpg"); */
+  counter-reset: section;
+  background-size: contain, cover;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+  color: var(--lightest-slate);
+  line-height: 1.1;
+}
+
+section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+}
+
+.numbered-heading {
+  box-sizing: inherit;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: 32px;
+  white-space: nowrap;
+  color: solid #64ffda;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.numbered-heading::before {
+  position: relative;
+  margin-top: 12px;
+  bottom: 4px;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "Lucida Console", "Courier New", 'monospace';
+  font-size: 24px;
+  /* font-size: clamp(var(--fz-md),2vw,var(--fz-xl)); */
+  font-weight: 400;
+}
+
+.numbered-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--lightest-navy);
+}
+
+ul {
+  list-style-type: circle;
+  line-height: 120%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-family: "Lucida Console", "Courier New", 'monospace';
+}
+
+.project-description {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    background-color: var(--light-navy);
+    color: var(--light-slate);
+    font-size: var(--fz-lg);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.project-name {
+  color: var(--lightest-slate);
+    font-size: clamp(24px, 5vw, 28px);
+    margin: 0px 0px 20px;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.project-tech-list {
+  /* -webkit-box-pack: end;
+  justify-content: flex-end; */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+}
+
+.footer {
+  font-family: "Lucida Console", "Courier New", 'monospace';
+}
