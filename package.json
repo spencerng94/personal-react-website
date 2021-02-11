@@ -8,19 +8,20 @@
     "react-dev": "webpack --config webpack.config.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js",
+    "build": "webpack --config webpack.config.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spencerng94/personal-react-website.git"
+    "url": "git+https://github.com/spencerng94/spencer-ng.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spencerng94/personal-react-website/issues"
+    "url": "https://github.com/spencerng94/spencer-ng/issues"
   },
-  "homepage": "https://github.com/spencerng94/personal-react-website#readme",
+  "homepage": "https://github.com/spencerng94/spencer-ng#readme",
   "dependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
