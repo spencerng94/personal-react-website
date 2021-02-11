@@ -18,21 +18,12 @@ const About = () => {
             </p>
             <p>Here are a few technologies I've been working with recently:</p>
             <ul>
-                <li>
-                    JavaScript (ES6+)
-                </li>
-                <li>
-                    HTML5 & CSS3
-                </li>
-                <li>
-                    React
-                </li>
-                <li>
-                    Node.js
-                </li>
-                <li>
-                    AWS
-                </li>
+                <li>JavaScript (ES6+)</li>
+                <li>HTML5 & CSS3</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>AWS</li>
+                <li>Docker</li>
             </ul>
         </div>
         </section>

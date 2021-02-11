@@ -2,21 +2,28 @@ import React from 'react';
 
 const Pollo = () => {
     return (
-        <div className="project-content">
+        <div className="horizontal-portfolio">
+        <div className="project-content3">
             <div className="project-name"> 
                 Poll-o
             </div>
-            <div>
-                SDC
+            <div className="project-description">
+                A social data polling mobile application that allows users to create polls and answer polls from various categories.
             </div>
-            <div> 
-                A SPA (single-page application) e-commerce site mockup that features a product with Faker.js generated data. 
-            </div>
-            <ul>
-                <li>Faker.js</li>
-                <li>AWS API</li>
-                <li>React.js</li>
+            <ul className="project-tech-list">
+                <li>AWS EC2</li>
+                <li>Expo</li>
+                <li>MySQL</li>
+                <li>Node.js</li>
+                <li>React Native</li>
+                <li>Webpack</li>
             </ul>
+        </div>
+            <div className="project-image">
+                <a href="https://github.com/spencerng94/poll-o">
+                <img className="project-image3" src="https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Pollo_SS.png"/>
+            </a>
+            </div>
         </div>
     )
 }

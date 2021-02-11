@@ -27,16 +27,17 @@ h1 {
 }
 
 .lets-connect {
-  font-size: clamp(30px, 8vw, 60px);
-  font-weight: 15;
+  font-size: clamp(27px, 12vw, 56px);
+  font-weight: 30;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   margin: auto;
   width: 50%;
 }
 
 .lets-connect-p {
-  margin: auto;
-  width: 50%;
+  margin-left: 178px;
+  width: 80%;
+  text-align: center
 }
 
 .intro {
@@ -82,7 +83,7 @@ h2, h3, h4 {
 
 section {
   margin: 0px auto;
-  padding: 100px 0px;
+  padding: 50px 0px;
   max-width: 1000px;
 }
 
@@ -94,7 +95,7 @@ section {
   position: relative;
   margin: 10px 0px 40px;
   width: 100%;
-  font-size: 32px;
+  font-size: 36px;
   white-space: nowrap;
   color: solid #64ffda;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
@@ -122,7 +123,7 @@ section {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: var(--lightest-navy);
+  background-color: whitesmoke;
 }
 
 ul {
@@ -133,6 +134,9 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 li {
@@ -143,42 +147,96 @@ li {
 
 .project-description {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
-    position: relative;
-    z-index: 2;
-    padding: 25px;
-    border-radius: var(--border-radius);
-    background-color: var(--light-navy);
-    color: var(--light-slate);
-    font-size: var(--fz-lg);
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: black;
+  color: #64ffda;
+  font-size: var(--fz-lg);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
 
 .project-name {
   color: var(--lightest-slate);
-    font-size: clamp(24px, 5vw, 28px);
-    margin: 0px 0px 20px;
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  font-size: 70%;
+  margin: 0px 0px 20px;
+  display: block;
+  font-size: 1.55em;
+  font-weight: 450;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
 
 .project-tech-list {
   /* -webkit-box-pack: end;
   justify-content: flex-end; */
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* position: relative; */
+  margin-left: 50px;
   z-index: 2;
-  margin: 25px 0px 10px;
+  /* margin: 25px 0px 10px; */
   padding: 0px;
-  list-style: none;
+  /* list-style: none; */
+}
+
+
+.project-image1 {
+  width: 500px;
+  height: 350px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-image2 {
+  width: 400px;
+  height: 450px;
+  border-radius: 25px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-image3 {
+  width: 320px;
+  height: 620px;
+  margin-bottom: 150px;
 }
 
 .footer {
   font-family: "Lucida Console", "Courier New", 'monospace';
+}
+
+a {
+  text-decoration: none;
+}
+
+.horizontal-portfolio {
+  display: flex;
+  margin-top: 50px;
+}
+
+.project-content {
+  font-size: 100%;
+}
+
+.project-content1 {
+  margin-right: 80px;
+}
+
+.project-content2 {
+  margin-left: 80px;
+}
+
+.project-content3 {
+  margin-right: 62px;
+}
+
+.email-me-button {
+  margin-left: 340px;
 }

@@ -1,30 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { Navbar, NavDropdown } from 'react-bootstrap/Navbar';
 
 export default class Nav extends React.Component {
   render() {    
     return (
-      <nav className="Nav">
-        <div className="Nav__container">
-          <Link to="/" className="Nav__brand">
-            <img src="logo.svg" className="Nav__logo" />
-          </Link>
-
-          <div className="Nav__right">
-            <ul className="Nav__item-wrapper">
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/path1">Link 1</Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/path2">Link 2</Link>
-              </li>
-              <li className="Nav__item">
-                <Link className="Nav__link" to="/path3">Link 3</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="s3://sn-personal-website-bucket/images/Logo_Animate.mp4">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse> */}
+      </Navbar>
     );
   }
 }

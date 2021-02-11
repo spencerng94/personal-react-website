@@ -11,6 +11,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
+                <Nav></Nav>
                 <header>
                 <section>
                     <div className="first-line"> 
@@ -23,7 +24,7 @@ class App extends React.Component {
                         I build software for the web.
                     </div>
                     <p>
-                        I'm a Full Stack Software Engineer based in San Francisco, CA specializing in building aesthetically pleasing websites and applications.
+                        I'm a Full Stack Software Engineer based in San Francisco, CA specializing in building impactful and designing applications for the web.
                     </p>
                     <a href="mailto:spencerng94@gmail.com" className="email-link">
                         Get in Touch
@@ -39,8 +40,8 @@ class App extends React.Component {
                     <Contact></Contact>
                 </section>
                   </header>
-        )
             </div>
+        )
     }
 }
 

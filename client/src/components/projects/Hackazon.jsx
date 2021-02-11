@@ -2,21 +2,30 @@ import React from 'react';
 
 const Hackazon = () => {
     return (
-        <div className="project-content">
+        <div className="horizontal-portfolio">
+        <div className="project-content1">
             <div className="project-name"> 
                 Hackazon
             </div>
             <div className="project-description"> 
-                A SPA (single-page application) e-commerce site mockup that features a product with Faker.js generated data. 
+                An e-commerce web application that features a product page with pictures, reviews, and Q&A. 
             </div>
             <ul className="project-tech-list">
-                <li>Faker.js</li>
-                <li>AWS API</li>
+                <li>AWS EC2</li>
+                <li>AWS S3</li>
                 <li>React.js</li>
+                <li>MongoDB</li>
+                <li>CSS3</li>
+                <li>Docker</li>
+                <li>Jest</li>
+                <li>Enzyme</li>
             </ul>
+        </div>
             <div className="project-image">
-                {/* <a href=""></a> */}
-            </div>
+            <a href="https://github.com/Team-SEEEL/main-product">
+                <img className="project-image1" src="https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Hackazon_SS.png"/>
+            </a>
+        </div>
         </div>
     )
 }
