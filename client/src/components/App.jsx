@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Switch, Route, Link } from 'react-router';
-import Nav from './nav/Nav.jsx';
+import NavigationBarHeader from './nav/Nav.jsx';
 import About from '../components/About.jsx';
 import Work from '../components/Work.jsx';
 import Contact from '../components/Contact.jsx';
@@ -11,7 +11,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <Nav></Nav>
+                <NavigationBarHeader></NavigationBarHeader>
                 <header>
                 <section>
                     <div className="first-line"> 
@@ -31,12 +31,12 @@ class App extends React.Component {
                     </a>
                 </section>
                 <About></About>
-                <section>
+                <section id="work">
                 <Work></Work>
                 </section>
                 {/* <Router> */}
                 {/* </Router> */}
-                <section>
+                <section id="contact">
                     <Contact></Contact>
                 </section>
                   </header>

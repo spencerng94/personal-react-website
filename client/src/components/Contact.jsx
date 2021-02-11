@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section>
+        <section id="contact">
             <h4 className="numbered-heading"> Contact</h4>
             <div className="lets-connect"> 
                 Let's Connect
@@ -17,6 +17,14 @@ const Contact = () => {
             <div className="email-me-button">
                 <a href="mailto:spencerng94@gmail.com" className="email-link">
                         Email Me :)
+                </a>
+            </div>
+            <div className="social-media">
+                <a href="https://github.com/spencerng94">
+                    <img className="github" src="https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Github_icon.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/ngspencer94/">
+                    <img className="linkedin" src="https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/LinkedIn_Icon.png"/>
                 </a>
             </div>
         </section>

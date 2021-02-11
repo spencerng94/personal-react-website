@@ -20,8 +20,16 @@ h1 {
   font-size: 10;
 }
 
-.full-name, .headline {
+.full-name {
   font-size: clamp(40px, 8vw, 80px);
+  color: white;
+  font-weight: 20;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.headline {
+  font-size: clamp(40px, 8vw, 80px);
+  color: #b3b3b3;
   font-weight: 20;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
@@ -32,6 +40,7 @@ h1 {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   margin: auto;
   width: 50%;
+  color: white;
 }
 
 .lets-connect-p {
@@ -61,7 +70,7 @@ h1 {
 }
 
 p {
-  color: midnightblue;
+  color: #b3b3b3;
   font-size: 18px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   margin-top: 10px;
@@ -69,9 +78,9 @@ p {
 }
 
 body {
-  background-color: coral;
+  background-color: #0d0d0d;
   /* /* background-image: url("https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Website_Cover4.jpg"); */
-  counter-reset: section;
+  counter-reset: a section;
   background-size: contain, cover;
 }
 
@@ -97,7 +106,7 @@ section {
   width: 100%;
   font-size: 36px;
   white-space: nowrap;
-  color: solid #64ffda;
+  color: white;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
 
@@ -120,7 +129,7 @@ section {
   display: block;
   position: relative;
   top: -5px;
-  width: 300px;
+  width: 560px;
   height: 1px;
   margin-left: 20px;
   background-color: whitesmoke;
@@ -137,6 +146,7 @@ ul {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+  color: #b3b3b3;
 }
 
 li {
@@ -159,7 +169,7 @@ li {
 }
 
 .project-name {
-  color: var(--lightest-slate);
+  color: #b3b3b3;
   font-size: 70%;
   margin: 0px 0px 20px;
   display: block;
@@ -173,6 +183,7 @@ li {
 }
 
 .project-tech-list {
+  color: #b3b3b3;
   /* -webkit-box-pack: end;
   justify-content: flex-end; */
   /* display: flex; */
@@ -190,7 +201,7 @@ li {
   width: 500px;
   height: 350px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -198,14 +209,14 @@ li {
   width: 400px;
   height: 450px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 2px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-image3 {
   width: 320px;
   height: 620px;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 
 .footer {
@@ -239,4 +250,62 @@ a {
 
 .email-me-button {
   margin-left: 340px;
+}
+
+.nav-bar {
+  display: flex;
+  font-family: "Lucida Console", "Courier New", 'monospace';
+}
+
+.nav-element::before {
+  content: "0" counter(a) ".";
+  counter-increment: a 1;
+  margin-right: 50px;
+  color: #64ffda;
+  font-size: 12px;
+  text-align: right;
+  font-family: "Lucida Console", "Courier New", 'monospace';
+}
+
+.nav-element {
+  padding: 20px;
+  color: white;
+  /* color: black; */
+  margin-left: 130px;
+  font-size: 12px;
+}
+
+.portrait {
+  width: 330px;
+  height: 460px;
+  border-radius: 25px;
+  margin-left: 80px;
+  border: 2px solid white;
+}
+
+.icon-logo {
+
+}
+
+.flex-about {
+  display: flex;
+}
+
+.github {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  border-left: 300px;
+}
+
+.linkedin {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.social-media {
+  margin-top: 40px;
+  margin-left: 305px;
 }
