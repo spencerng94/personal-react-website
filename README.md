@@ -1,5 +1,4 @@
-# personal-react-website
+# spencer-ng-website
 
-node_modules
+This repo is a static single-page application created with React and hosted on Github Pages.
 
-public
