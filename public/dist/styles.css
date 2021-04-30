@@ -145,6 +145,7 @@ ul {
   -webkit-columns: 2;
   -moz-columns: 2;
   color: #b3b3b3;
+  margin-bottom: 3em;
 }
 
 li {
@@ -154,6 +155,19 @@ li {
 }
 
 .project-description {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: black;
+  color: #64ffda;
+  font-size: var(--fz-lg);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+.heroku-link {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
   position: relative;
@@ -199,7 +213,7 @@ li {
   width: 500px;
   height: 350px;
   border-radius: 25px;
-  border: 2px solid black;
+  border: 2px solid #64ffda;;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -207,13 +221,29 @@ li {
   width: 400px;
   height: 450px;
   border-radius: 25px;
-  border: 2px solid black;
+  border: 2px solid #64ffda;;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-image3 {
   width: 320px;
   height: 620px;
+  /* margin-bottom: 150px; */
+}
+
+.project-image4 {
+  width: 500px;
+  height: 350px;
+  border-radius: 25px;
+  border: 2px solid white;
+  /* margin-bottom: 150px; */
+}
+
+.project-image5 {
+  width: 360px;
+  height: 620px;
+  border-radius: 25px;
+  border: 2px solid #64ffda;;
   /* margin-bottom: 150px; */
 }
 
@@ -246,6 +276,10 @@ a {
   margin-right: 62px;
 }
 
+.project-content4 {
+  margin-right: 62px;
+}
+
 .email-me-button {
   margin-left: 340px;
 }
@@ -255,18 +289,25 @@ a {
   font-family: "Lucida Console", "Courier New", 'monospace';
 }
 
+.nav-sections {
+  margin-top: 2em;
+  margin-right: 2em;
+  position: absolute;
+  right: 0px;
+}
+
 .nav-element::before {
   content: "0" counter(a) ".";
   counter-increment: a 1;
   margin-right: 50px;
   color: #64ffda;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
   font-family: "Lucida Console", "Courier New", 'monospace';
 }
 
 .nav-element {
-  padding: 20px;
+  padding: 22px;
   color: white;
   /* color: black; */
   /* margin-left: 130px; */
@@ -279,10 +320,6 @@ a {
   border-radius: 25px;
   margin-left: 80px;
   border: 2px solid white;
-}
-
-.icon-logo {
-
 }
 
 .flex-about {

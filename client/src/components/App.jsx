@@ -12,8 +12,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <NavigationBarHeader></NavigationBarHeader>
                 <header>
+                <NavigationBarHeader></NavigationBarHeader>
                 <section id="intro">
                     <Intro></Intro>
                 </section>

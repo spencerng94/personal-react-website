@@ -22,10 +22,10 @@ const Hackazon = () => {
             </ul>
         </div>
             <div className="project-image">
-            <a href="https://github.com/Team-SEEEL/main-product">
-                <img className="project-image1" src="https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Hackazon_SS.png"/>
-            </a>
-        </div>
+                <a href="https://github.com/Team-SEEEL/main-product">
+                    <img className="project-image1" src="https://sn-personal-website-bucket.s3-us-west-1.amazonaws.com/images/Hackazon_SS.png"/>
+                </a>
+            </div>
         </div>
     )
 }
